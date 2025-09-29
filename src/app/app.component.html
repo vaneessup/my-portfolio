@@ -19,12 +19,92 @@
 </header>
 
 <!-- Example sections -->
-<section id="home" class="scroll-mt-20 h-screen bg-neutral-950 text-neutral-200 flex items-center justify-center">
-  <h1 class="text-4xl font-bold">Welcome to my Portfolio 🚀</h1>
+
+<!-- HOME -->
+<section id="home" class="scroll-mt-20 relative isolate min-h-[88vh] flex items-center">
+  <!-- Subtle gradient + pattern -->
+  <div class="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-900 via-black to-neutral-900"></div>
+  <div class="absolute -z-10 inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,.12),transparent_35%),radial-gradient(circle_at_80%_30%,rgba(236,72,153,.10),transparent_35%)]"></div>
+
+  <div class="max-w-7xl mx-auto w-full px-6 grid gap-10 md:grid-cols-2 items-center">
+    <!-- LEFT: Identity + value + CTAs -->
+    <div>
+      <span class="inline-flex items-center gap-2 text-xs font-medium text-blue-300/90 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full">
+        👋 Hi, I’m Yeymi  — Software Engineer
+      </span>
+
+      <h1 class="mt-4 text-4xl md:text-6xl font-extrabold leading-tight text-white">
+        I build clean, responsive <span class="text-blue-400">web</span> apps.
+
+      </h1>
+
+      <p class="mt-4 text-neutral-300 text-lg max-w-xl">
+        Passionate about creating user-friendly experiences, integrating modern technologies,
+        and growing into full-stack development.
+      </p>
+
+      <!-- Tech badges -->
+      <div class="mt-6 flex flex-wrap gap-2">
+        <span class="px-3 py-1.5 rounded-xl border border-neutral-700 bg-neutral-900/60 text-neutral-200 text-sm">Angular</span>
+        <span class="px-3 py-1.5 rounded-xl border border-neutral-700 bg-neutral-900/60 text-neutral-200 text-sm">React</span>
+        <span class="px-3 py-1.5 rounded-xl border border-neutral-700 bg-neutral-900/60 text-neutral-200 text-sm">TypeScript</span>
+        <span class="px-3 py-1.5 rounded-xl border border-neutral-700 bg-neutral-900/60 text-neutral-200 text-sm">Tailwind</span>
+        <span class="px-3 py-1.5 rounded-xl border border-neutral-700 bg-neutral-900/60 text-neutral-200 text-sm">REST APIs</span>
+        <span class="px-3 py-1.5 rounded-xl border border-neutral-700 bg-neutral-900/60 text-neutral-200 text-sm">SQL</span>
+        <span class="px-3 py-1.5 rounded-xl border border-neutral-700 bg-neutral-900/60 text-neutral-200 text-sm">more...</span>
+      </div>
+
+      <!-- CTAs -->
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#projects"
+           class="px-6 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-600/20 transition">
+          View Projects
+        </a>
+        <a href="#contact"
+           class="px-6 py-3 rounded-xl border border-neutral-700 text-neutral-200 hover:bg-neutral-800 transition">
+          Contact Me
+        </a>
+      </div>
+
+      <!-- Socials -->
+      <div class="mt-6 flex items-center gap-4 text-neutral-400">
+        <a class="hover:text-white transition" href="https://github.com/your-username" target="_blank">GitHub</a>
+        <span class="opacity-30">•</span>
+        <a class="hover:text-white transition" href="https://www.linkedin.com/in/your-username" target="_blank">LinkedIn</a>
+        <span class="opacity-30">•</span>
+        <a class="hover:text-white transition" href="#skills">Skills</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Visual card (replace image later) -->
+    <div class="w-full max-w-md justify-self-center md:justify-self-end">
+      <div class="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 backdrop-blur">
+        <div class="h-44 rounded-xl bg-gradient-to-tr from-blue-600/30 via-cyan-400/20 to-fuchsia-500/20"></div>
+        <h3 class="mt-4 text-white font-semibold">Featured Project</h3>
+        <p class="mt-1 text-sm text-neutral-400">
+          Angular + Tailwind dashboard with auth, theming, and responsive charts.
+        </p>
+        <div class="mt-3 flex gap-3">
+          <a class="text-blue-400 hover:underline" href="#" target="_blank">Live</a>
+          <a class="text-blue-400 hover:underline" href="#" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative glows -->
+  <div class="pointer-events-none absolute -z-10 top-10 right-[8%] h-56 w-56 rounded-full blur-3xl bg-blue-600/20"></div>
+  <div class="pointer-events-none absolute -z-10 bottom-16 left-[12%] h-48 w-48 rounded-full blur-3xl bg-fuchsia-500/10"></div>
+
+  <!-- Scroll cue -->
+  <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-neutral-400 hover:text-white text-sm">
+    Scroll ↓
+  </a>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="scroll-mt-20 h-screen flex items-center justify-center">
-  <p class="max-w-2xl text-center">
+  <p class="max-w-1xl text-center">
     I'm a Frontend Developer with experience in Angular, TypeScript, SCSS, and API integration.
     Passionate about creating user-friendly and scalable web applications.
   </p>
