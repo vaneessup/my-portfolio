@@ -104,20 +104,28 @@
 
 <!-- ABOUT -->
 <section id="about" class="scroll-mt-20 h-screen flex items-center justify-center">
-  <p class="max-w-1xl text-center">
-    I'm a Frontend Developer with experience in Angular, TypeScript, SCSS, and API integration.
-    Passionate about creating user-friendly and scalable web applications.
-  </p>
+    <app-about></app-about>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="scroll-mt-20 h-screen bg-neutral-100 text-neutral-900 flex items-center justify-center">
-  <h2 class="text-3xl font-semibold">Skills</h2>
+  <app-skills></app-skills>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="scroll-mt-20 h-screen flex items-center justify-center">
-  <h2 class="text-3xl font-semibold">Projects</h2>
+  <app-projects></app-projects>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="scroll-mt-20 h-screen bg-neutral-100 text-neutral-900 flex items-center justify-center">
-  <h2 class="text-3xl font-semibold">Contact</h2>
+  <app-contact></app-contact>
 </section>
+
+<footer class="border-t">
+  <div class="max-w-7xl mx-auto px-6 py-8 text-sm text-gray-500">
+    <!-- © {{ new Date().getFullYear() }} Yeymi. All rights reserved. -->
+      ©  Yeymi. All rights reserved.
+  </div>
+</footer>
+

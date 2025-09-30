@@ -1,1 +1,6 @@
 @import "tailwindcss";
+html { scroll-behavior: smooth; }
+
+@layer components {
+  .nav-link { @apply opacity-90 no-underline px-3 py-2 rounded-md transition hover:opacity-100 hover:text-blue-400 hover:bg-neutral-800; }
+}
